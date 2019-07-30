@@ -4,5 +4,5 @@ The Counter is able to get files as an input and process them in parallel utiliz
 java.util.concurrent.ConcurrentHashMap and also it’s method putIfAbsent()
   
   
-#Java doc
+# Java doc
 
