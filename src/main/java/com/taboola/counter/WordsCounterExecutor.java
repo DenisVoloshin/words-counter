@@ -1,6 +1,7 @@
 package com.taboola.counter;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.*;
 
@@ -54,10 +55,10 @@ class WordsCounterExecutor {
 
     /**
      * Returns a list of failed file names.
-     * @return
+     * @return unmodifiable list of file names
      */
     List<String> getFailedFiles() {
-        return failedFiles;
+        return Collections.unmodifiableList(failedFiles);
     }
 
     private static class Pair<K, V> {
